@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cpd/lib/src/recipes/domain/recipe.dart';
+import 'package:flutterdemo/src/recipes/domain/recipe.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
