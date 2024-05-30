@@ -1,72 +1,72 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:yumyumnavigator/src/recipes/presentation/widget/recipe_details/animated_sliding_panel.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:yumyumnavigator/src/core/theme/app_colors.dart';
 import 'package:yumyumnavigator/src/recipes/domain/recipe.dart';
+import 'package:yumyumnavigator/src/recipes/presentation/widget/recipe_details/ingredients_card_list.dart';
+import 'package:yumyumnavigator/src/recipes/presentation/widget/recipe_details/time_line_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-class TimeLineSlidingPanel extends StatefulWidget {
+class AnimatedSlidingPanel extends AnimatedWidget {
   final Recipe recipe;
   final Widget body;
   final BoxConstraints constraints;
-  const TimeLineSlidingPanel({
-    Key? key,
-    required this.recipe,
-    required this.body,
-    required this.constraints,
-  }) : super(key: key);
-
-  @override
-  State<TimeLineSlidingPanel> createState() => _TimeLineSlidingPanelState();
-}
-
-class _TimeLineSlidingPanelState extends State<TimeLineSlidingPanel>
-    with TickerProviderStateMixin {
-  late final AnimationController _controller;
-  late final Animation<double> _animation;
-  late final CurvedAnimation _curvedAnimation;
-  late final AnimationController _ingridController;
-  final baseDelayTime = 2000.ms;
-  final slidingDuration = 600.ms;
-
-  @override
-  void initState() {
-    initializeControllers();
-    playAnimations();
-    super.initState();
-  }
-
-  void initializeControllers() {
-    _ingridController = AnimationController(vsync: this);
-    _controller = AnimationController(vsync: this, duration: slidingDuration);
-    _curvedAnimation =
-        CurvedAnimation(parent: _controller, curve: Curves.easeInOutSine);
-    _animation = Tween<double>(begin: 0, end: 0.4).animate(_curvedAnimation);
-  }
-
-  void playAnimations() {
-    Future.delayed(baseDelayTime, () {
-      _controller.forward();
-    });
-    Future.delayed(baseDelayTime + 400.ms, () => _ingridController.forward());
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    _curvedAnimation.dispose();
-    _ingridController.dispose();
-    super.dispose();
-  }
+  final AnimationController ingredientController;
+  final Duration baseDelayTime;
+  final Duration slidingDuration;
+  const AnimatedSlidingPanel(
+      {super.key,
+      required this.recipe,
+      required this.body,
+      required this.constraints,
+      required this.ingredientController,
+      required this.baseDelayTime,
+      required this.slidingDuration,
+      required super.listenable});
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedSlidingPanel(
-        recipe: widget.recipe,
-        body: widget.body,
-        constraints: widget.constraints,
-        ingredientController: _ingridController,
-        baseDelayTime: baseDelayTime,
-        slidingDuration: slidingDuration,
-        listenable: _animation);
+    final header = Container(
+      height: 6,
+      width: 50,
+      alignment: Alignment.center,
+      padding: const EdgeInsets.only(top: 20),
+      margin: EdgeInsets.symmetric(
+          horizontal: constraints.maxWidth * 0.4, vertical: 10),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10), color: Colors.white24),
+    );
+    return SlidingUpPanel(
+        header: header,
+        margin: const EdgeInsets.symmetric(horizontal: 10),
+        color: AppColors.cardColor,
+        maxHeight: constraints.maxHeight * 0.9,
+        minHeight:
+            constraints.maxHeight * (listenable as Animation<double>).value,
+        borderRadius: BorderRadius.circular(30),
+        body: body,
+        panel: Column(
+          children: [
+            const SizedBox(
+              height: 30,
+            ),
+            IngredientsCardList(
+              ingredientController: ingredientController,
+              recipe: recipe,
+              delayTime: baseDelayTime,
+              slidingDuration: slidingDuration,
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const Divider(
+              color: Colors.white54,
+            ),
+            Expanded(
+                child: TimeLineWidget(
+              steps: recipe.steps,
+              isCheckedList:
+                  List.generate(recipe.steps.length, (index) => false),
+            ))
+          ],
+        ));
   }
 }
