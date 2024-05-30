@@ -1,5 +1,5 @@
-import 'package:devicepreview/device_preview.dart';
-import 'package:yumyumnavigator/src/core/animation/page_transition.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:yumyumnavigator/src/core/animations/page_transition.dart';
 import 'package:yumyumnavigator/src/core/theme/app_theme.dart';
 import 'package:yumyumnavigator/src/onboarding/onboarding_screen.dart';
 import 'package:yumyumnavigator/src/recipes/domain/recipe.dart';
@@ -28,13 +28,13 @@ class DribbleChallenge extends StatelessWidget {
       onGenerateRoute: (settings) {
         return switch (settings.name) {
           'home' => NoAnimationTransition(
-            builder: (context) => const HomeScreen(),
-          ),
+              builder: (context) => const HomeScreen(),
+            ),
           'recipe_details' => NoAnimationTransition(
-            builder: (context) =>
-                RecipeDetailsScreen(recipe: settings.arguments as Recipe),
-          ),
-        => NoAnimationTransition(builder: (context) => const HomeScreen())
+              builder: (context) =>
+                  RecipeDetailsScreen(recipe: settings.arguments as Recipe),
+            ),
+          _ => NoAnimationTransition(builder: (context) => const HomeScreen())
         };
       },
       theme: mainTheme,
@@ -44,3 +44,4 @@ class DribbleChallenge extends StatelessWidget {
     );
   }
 }
+//a

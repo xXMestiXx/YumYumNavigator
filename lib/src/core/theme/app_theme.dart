@@ -1,4 +1,4 @@
-import 'package:flutterdemo/src/core/theme/app_colors.dart';
+import 'package:yumyumnavigator/src/core/theme/app_colors.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 
