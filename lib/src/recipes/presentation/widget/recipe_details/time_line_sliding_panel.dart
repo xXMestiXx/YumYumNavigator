@@ -1,5 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:yumyumnavigator/src/recipes/presentation/widget/recipe_details/time_line_sliding_panel.dart';
+import 'package:yumyumnavigator/src/recipes/presentation/widget/recipe_details/animated_sliding_panel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:yumyumnavigator/src/recipes/domain/recipe.dart';
