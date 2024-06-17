@@ -12,7 +12,7 @@ part of 'recipe.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 Recipe _$RecipeFromJson(Map<String, dynamic> json) {
   return _Recipe.fromJson(json);
@@ -22,6 +22,7 @@ Recipe _$RecipeFromJson(Map<String, dynamic> json) {
 mixin _$Recipe {
   String get name => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
   String get imageUrl => throw _privateConstructorUsedError;
   Map<String, num> get nutrition => throw _privateConstructorUsedError;
   List<String> get ingredients => throw _privateConstructorUsedError;
@@ -41,6 +42,7 @@ abstract class $RecipeCopyWith<$Res> {
   $Res call(
       {String name,
       String description,
+      String category,
       String imageUrl,
       Map<String, num> nutrition,
       List<String> ingredients,
@@ -63,6 +65,7 @@ class _$RecipeCopyWithImpl<$Res, $Val extends Recipe>
   $Res call({
     Object? name = null,
     Object? description = null,
+    Object? category = null,
     Object? imageUrl = null,
     Object? nutrition = null,
     Object? ingredients = null,
@@ -77,6 +80,10 @@ class _$RecipeCopyWithImpl<$Res, $Val extends Recipe>
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      category: null == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String,
       imageUrl: null == imageUrl
           ? _value.imageUrl
@@ -103,14 +110,16 @@ class _$RecipeCopyWithImpl<$Res, $Val extends Recipe>
 }
 
 /// @nodoc
-abstract class _$$_RecipeCopyWith<$Res> implements $RecipeCopyWith<$Res> {
-  factory _$$_RecipeCopyWith(_$_Recipe value, $Res Function(_$_Recipe) then) =
-      __$$_RecipeCopyWithImpl<$Res>;
+abstract class _$$RecipeImplCopyWith<$Res> implements $RecipeCopyWith<$Res> {
+  factory _$$RecipeImplCopyWith(
+          _$RecipeImpl value, $Res Function(_$RecipeImpl) then) =
+      __$$RecipeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {String name,
       String description,
+      String category,
       String imageUrl,
       Map<String, num> nutrition,
       List<String> ingredients,
@@ -119,10 +128,11 @@ abstract class _$$_RecipeCopyWith<$Res> implements $RecipeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_RecipeCopyWithImpl<$Res>
-    extends _$RecipeCopyWithImpl<$Res, _$_Recipe>
-    implements _$$_RecipeCopyWith<$Res> {
-  __$$_RecipeCopyWithImpl(_$_Recipe _value, $Res Function(_$_Recipe) _then)
+class __$$RecipeImplCopyWithImpl<$Res>
+    extends _$RecipeCopyWithImpl<$Res, _$RecipeImpl>
+    implements _$$RecipeImplCopyWith<$Res> {
+  __$$RecipeImplCopyWithImpl(
+      _$RecipeImpl _value, $Res Function(_$RecipeImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -130,13 +140,14 @@ class __$$_RecipeCopyWithImpl<$Res>
   $Res call({
     Object? name = null,
     Object? description = null,
+    Object? category = null,
     Object? imageUrl = null,
     Object? nutrition = null,
     Object? ingredients = null,
     Object? steps = null,
     Object? id = null,
   }) {
-    return _then(_$_Recipe(
+    return _then(_$RecipeImpl(
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -144,6 +155,10 @@ class __$$_RecipeCopyWithImpl<$Res>
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      category: null == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String,
       imageUrl: null == imageUrl
           ? _value.imageUrl
@@ -171,10 +186,11 @@ class __$$_RecipeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Recipe implements _Recipe {
-  _$_Recipe(
+class _$RecipeImpl implements _Recipe {
+  _$RecipeImpl(
       {required this.name,
       required this.description,
+      required this.category,
       required this.imageUrl,
       required final Map<String, num> nutrition,
       required final List<String> ingredients,
@@ -184,13 +200,15 @@ class _$_Recipe implements _Recipe {
         _ingredients = ingredients,
         _steps = steps;
 
-  factory _$_Recipe.fromJson(Map<String, dynamic> json) =>
-      _$$_RecipeFromJson(json);
+  factory _$RecipeImpl.fromJson(Map<String, dynamic> json) =>
+      _$$RecipeImplFromJson(json);
 
   @override
   final String name;
   @override
   final String description;
+  @override
+  final String category;
   @override
   final String imageUrl;
   final Map<String, num> _nutrition;
@@ -222,18 +240,19 @@ class _$_Recipe implements _Recipe {
 
   @override
   String toString() {
-    return 'Recipe(name: $name, description: $description, imageUrl: $imageUrl, nutrition: $nutrition, ingredients: $ingredients, steps: $steps, id: $id)';
+    return 'Recipe(name: $name, description: $description, category: $category, imageUrl: $imageUrl, nutrition: $nutrition, ingredients: $ingredients, steps: $steps, id: $id)';
   }
 
   @override
-  // ignore: non_nullable_equals_parameter
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Recipe &&
+            other is _$RecipeImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.description, description) ||
                 other.description == description) &&
+            (identical(other.category, category) ||
+                other.category == category) &&
             (identical(other.imageUrl, imageUrl) ||
                 other.imageUrl == imageUrl) &&
             const DeepCollectionEquality()
@@ -250,6 +269,7 @@ class _$_Recipe implements _Recipe {
       runtimeType,
       name,
       description,
+      category,
       imageUrl,
       const DeepCollectionEquality().hash(_nutrition),
       const DeepCollectionEquality().hash(_ingredients),
@@ -259,12 +279,12 @@ class _$_Recipe implements _Recipe {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RecipeCopyWith<_$_Recipe> get copyWith =>
-      __$$_RecipeCopyWithImpl<_$_Recipe>(this, _$identity);
+  _$$RecipeImplCopyWith<_$RecipeImpl> get copyWith =>
+      __$$RecipeImplCopyWithImpl<_$RecipeImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RecipeToJson(
+    return _$$RecipeImplToJson(
       this,
     );
   }
@@ -274,18 +294,21 @@ abstract class _Recipe implements Recipe {
   factory _Recipe(
       {required final String name,
       required final String description,
+      required final String category,
       required final String imageUrl,
       required final Map<String, num> nutrition,
       required final List<String> ingredients,
       required final List<String> steps,
-      required final String id}) = _$_Recipe;
+      required final String id}) = _$RecipeImpl;
 
-  factory _Recipe.fromJson(Map<String, dynamic> json) = _$_Recipe.fromJson;
+  factory _Recipe.fromJson(Map<String, dynamic> json) = _$RecipeImpl.fromJson;
 
   @override
   String get name;
   @override
   String get description;
+  @override
+  String get category;
   @override
   String get imageUrl;
   @override
@@ -298,6 +321,6 @@ abstract class _Recipe implements Recipe {
   String get id;
   @override
   @JsonKey(ignore: true)
-  _$$_RecipeCopyWith<_$_Recipe> get copyWith =>
+  _$$RecipeImplCopyWith<_$RecipeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

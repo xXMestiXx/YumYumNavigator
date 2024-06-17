@@ -15,7 +15,7 @@ class RecipeDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnnotatedScaffold(
-      // assetPath: "assets/images/recipe_details.png",
+      //assetPath: "assets/images/recipe_details.png",
       child: LayoutBuilder(builder: (context, constraints) {
         final appBarPlayTime = 800.ms;
         final appBarDelayTime = 400.ms;

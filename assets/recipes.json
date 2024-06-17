@@ -2,6 +2,7 @@
     {
       "id": "1",
       "name": "Spaghetti Bolognese",
+      "category": "Popular",
       "description": "A classic Italian meat sauce served over pasta",
       "imageUrl": "assets/images/spaghetti.png",
       "ingredients": ["spaghetti", "ground beef", "onions", "tomato sauce", "red wine"],
@@ -14,7 +15,8 @@
     },
     {
       "id": "2",
-      "name": "Chicken Parmesan", 
+      "name": "Chicken Parmesan",
+      "category": "Popular",
       "description": "Breaded chicken breast topped with tomato sauce and mozzarella",
       "imageUrl": "assets/images/chicken.png",
       "ingredients": ["chicken breasts", "breadcrumbs", "parmesan", "tomato sauce", "mozzarella"],
@@ -29,6 +31,7 @@
     {
       "id": "3",
       "name": "Caesar Salad",
+      "category": "Healthy",
       "description": "Romaine lettuce with creamy Caesar dressing, croutons and parmesan", 
       "imageUrl": "assets/images/salad.png",
       "ingredients": ["romaine lettuce", "caesar dressing", "croutons", "parmesan"],
@@ -43,6 +46,7 @@
     {
       "id": "4",
       "name": "Tacos",
+      "category": "Popular",
       "description": "Soft tortilla shells filled with seasoned ground beef, lettuce, cheese and salsa",
       "imageUrl": "assets/images/tacos.png",
       "ingredients": ["tortillas", "ground beef", "lettuce", "cheese", "salsa"],  
@@ -57,6 +61,7 @@
     {
       "id": "5",
       "name": "Pasta Alfredo",
+      "category": "Popular",
       "description": "Fettuccine pasta tossed in a rich, creamy parmesan cheese sauce",
       "imageUrl": "assets/images/alfredo.png",
       "ingredients": ["fettuccine", "butter", "cream", "parmesan"],
@@ -70,7 +75,8 @@
   
     {
       "id": "6",
-      "name": "Cheese Pizza", 
+      "name": "Cheese Pizza",
+      "category": "Popular",
       "description": "Crispy crust with tomato sauce and mozzarella cheese",
       "imageUrl": "assets/images/pizza.png",
       "ingredients": ["pizza dough", "tomato sauce", "mozzarella"], 
@@ -85,6 +91,7 @@
     {
       "id": "7",
       "name": "Hamburger",
+      "category": "Popular",
       "description": "Juicy beef patty with lettuce, tomato, onion and cheese on a bun",
       "imageUrl": "assets/images/burger.png",
       "ingredients": ["ground beef", "hamburger buns", "lettuce", "tomato", "onion", "cheese"],
@@ -99,6 +106,7 @@
     {  
       "id": "8",
       "name": "Chocolate Chip Cookies",
+      "category": "Snacks",
       "description": "Chewy cookies filled with chocolate chips",
       "imageUrl": "assets/images/cookies.png",
       "ingredients": ["flour", "butter", "sugar", "eggs", "chocolate chips"],
@@ -113,6 +121,7 @@
     {
       "id": "9",
       "name": "Chicken Fried Rice",
+      "category": "Popular",
       "description": "Rice stir-fried with chicken, vegetables and egg",
       "imageUrl": "assets/images/rice.png",
       "ingredients": ["rice", "chicken", "vegetables", "egg", "soy sauce"],
@@ -127,6 +136,7 @@
     {
       "id": "10",
       "name": "Asian Power Bowl",
+      "category": "Healthy",
       "description": "Delicious asian power bowl with beef and vegetables",
       "imageUrl": "assets/images/power_bowl.png",
       "ingredients": ["rice", "beef", "vegetables", "egg", "soy sauce"],
@@ -141,6 +151,7 @@
   {
     "id": "11",
     "name": "Homemade Mozzarella",
+    "category": "Popular",
     "description": "Make your own Mozzarella at Home!",
     "imageUrl": "assets/images/mozarella.png",
     "ingredients": ["Milk 5L" , "Yogurt 150ML" , "vegetarian rennet 3ML"],
@@ -162,6 +173,7 @@
 {
   "id": "12",
   "name": "Tomato Sauce",
+  "category": "Soup",
   "description": "Delicious Homemade Tomato Sauce",
   "imageUrl": "assets/images/tomatosouce.png",
   "ingredients": ["Tomatos", "Olive Oil", "Butter", "Onion", "Bell pepper" , "Carrot" , "Celery"],
