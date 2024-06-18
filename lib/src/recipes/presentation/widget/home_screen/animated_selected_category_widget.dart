@@ -5,10 +5,12 @@ import 'package:flutter_animate/flutter_animate.dart';
 class AnimatedSelectedCategoryWidget extends StatelessWidget {
   final Duration selectedCategoryPlayDuration;
   final Duration selectedCategoryDelayDuration;
+  final int visibleRecipesCount;
   const AnimatedSelectedCategoryWidget({
     Key? key,
     required this.selectedCategoryPlayDuration,
     required this.selectedCategoryDelayDuration,
+    required this.visibleRecipesCount,
   }) : super(key: key);
 
   @override
@@ -16,7 +18,7 @@ class AnimatedSelectedCategoryWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 20),
       child: Text(
-        "10 Recipes",
+        "$visibleRecipesCount Recipes",
         style: Theme.of(context).textTheme.titleLarge,
       )
           .animate()
