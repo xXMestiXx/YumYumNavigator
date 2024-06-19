@@ -413,6 +413,20 @@
         "protein": 8,
         "prepTime": 20
     }
+},
+{
+    "id": "29",
+    "name": "Tomato Basil Soup",
+    "category": "Soup",
+    "description": "A creamy and flavorful tomato soup with fresh basil",
+    "imageUrl": "assets/images/tomato_basil_soup.png",
+    "ingredients": ["tomatoes", "onion", "garlic", "basil", "cream"],
+    "steps": ["Sauté onions and garlic until soft.", "Add tomatoes and cook until tender.", "Blend mixture until smooth.", "Stir in cream and basil.", "Simmer for 10 minutes.", "Serve hot."],
+    "nutrition": {
+        "calories": 200,
+        "protein": 4,
+        "prepTime": 30
+    }
 }
 
   ]
