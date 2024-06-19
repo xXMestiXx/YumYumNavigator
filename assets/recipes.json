@@ -329,6 +329,20 @@
         "protein": 8,
         "prepTime": 5
     }
+},
+{
+    "id": "23",
+    "name": "Eggplant Parmesan",
+    "category": "Popular",
+    "description": "Baked eggplant slices layered with marinara sauce and mozzarella",
+    "imageUrl": "assets/images/eggplant_parmesan.png",
+    "ingredients": ["eggplant", "marinara sauce", "mozzarella", "parmesan", "breadcrumbs"],
+    "steps": ["Preheat oven to 375°F.", "Bread eggplant slices with breadcrumbs.", "Layer eggplant, marinara, and mozzarella in a baking dish.", "Top with parmesan cheese.", "Bake for 30 minutes until bubbly."],
+    "nutrition": {
+        "calories": 500,
+        "protein": 20,
+        "prepTime": 45
+    }
 }
 
   ]
