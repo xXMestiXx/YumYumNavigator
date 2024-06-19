@@ -189,6 +189,20 @@
     "protein": 3,
     "prepTime": 60
 }
+},
+{
+  "id": "13",
+  "name": "Grilled Salmon",
+  "category": "Healthy",
+  "description": "Fresh salmon fillets grilled to perfection with a lemon butter sauce",
+  "imageUrl": "assets/images/grilled_salmon.png",
+  "ingredients": ["salmon fillets", "lemon", "butter", "garlic", "dill"],
+  "steps": ["Preheat grill to medium-high heat.", "Season salmon with salt, pepper, and garlic.", "Grill salmon for 6-8 minutes on each side.", "Melt butter and mix with lemon juice and dill.", "Drizzle lemon butter over grilled salmon before serving."],
+  "nutrition": {
+      "calories": 400,
+      "protein": 34,
+      "prepTime": 20
+  }
 }
 
   ]
