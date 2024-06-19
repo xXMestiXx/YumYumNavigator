@@ -203,6 +203,20 @@
       "protein": 34,
       "prepTime": 20
   }
+},
+{
+    "id": "14",
+    "name": "Beef Stroganoff",
+    "category": "Popular",
+    "description": "Tender beef in a rich and creamy mushroom sauce, served over noodles",
+    "imageUrl": "assets/images/beef_stroganoff.png",
+    "ingredients": ["beef strips", "mushrooms", "onion", "sour cream", "beef broth", "noodles"],
+    "steps": ["Cook noodles according to package directions.", "Sauté onions and mushrooms in a pan until soft.", "Add beef strips and cook until browned.", "Stir in beef broth and simmer for 10 minutes.", "Add sour cream and stir until sauce is creamy.", "Serve over cooked noodles."],
+    "nutrition": {
+        "calories": 600,
+        "protein": 30,
+        "prepTime": 40
+    }
 }
 
   ]
