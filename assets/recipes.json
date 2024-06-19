@@ -455,6 +455,20 @@
         "protein": 3,
         "prepTime": 30
     }
-}
+},
+    {
+        "id": "32",
+        "name": "Beef and Broccoli",
+        "category": "Popular",
+        "description": "Tender beef strips with broccoli in a savory sauce",
+        "imageUrl": "assets/images/beef_and_broccoli.png",
+        "ingredients": ["beef strips", "broccoli", "soy sauce", "garlic", "ginger"],
+        "steps": ["Sauté garlic and ginger until fragrant.", "Add beef strips and cook until browned.", "Stir in broccoli and soy sauce.", "Cook until broccoli is tender-crisp.", "Serve hot over rice."],
+        "nutrition": {
+            "calories": 400,
+            "protein": 25,
+            "prepTime": 20
+        }
+    }
 
   ]
