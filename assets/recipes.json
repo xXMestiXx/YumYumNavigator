@@ -259,6 +259,20 @@
         "protein": 20,
         "prepTime": 20
     }
+},
+{
+    "id": "18",
+    "name": "Quinoa Salad",
+    "category": "Healthy",
+    "description": "A refreshing salad with quinoa, cherry tomatoes, cucumbers, and feta",
+    "imageUrl": "assets/images/quinoa_salad.png",
+    "ingredients": ["quinoa", "cherry tomatoes", "cucumbers", "feta cheese", "olive oil", "lemon juice"],
+    "steps": ["Cook quinoa according to package directions.", "Chop cherry tomatoes and cucumbers.", "Toss quinoa with tomatoes, cucumbers, and feta.", "Drizzle with olive oil and lemon juice.", "Serve chilled."],
+    "nutrition": {
+        "calories": 350,
+        "protein": 12,
+        "prepTime": 20
+    }
 }
 
   ]
