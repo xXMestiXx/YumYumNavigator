@@ -371,6 +371,20 @@
         "protein": 5,
         "prepTime": 30
     }
+},
+{
+    "id": "26",
+    "name": "Lemon Bars",
+    "category": "Dessert",
+    "description": "Tangy and sweet lemon bars with a buttery crust",
+    "imageUrl": "assets/images/lemon_bars.png",
+    "ingredients": ["flour", "butter", "sugar", "lemon juice", "eggs"],
+    "steps": ["Preheat oven to 350°F.", "Mix flour, butter, and sugar to form crust.", "Press into baking dish and bake for 20 minutes.", "Whisk lemon juice, eggs, and sugar.", "Pour over baked crust and bake for another 25 minutes.", "Cool before cutting into bars."],
+    "nutrition": {
+        "calories": 300,
+        "protein": 4,
+        "prepTime": 50
+    }
 }
 
   ]
