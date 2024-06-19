@@ -427,6 +427,20 @@
         "protein": 4,
         "prepTime": 30
     }
+},
+{
+    "id": "30",
+    "name": "Chicken Noodle Soup",
+    "category": "Soup",
+    "description": "A comforting soup with chicken, noodles, and vegetables",
+    "imageUrl": "assets/images/chicken_noodle_soup.png",
+    "ingredients": ["chicken breasts", "noodles", "carrots", "celery", "chicken broth"],
+    "steps": ["Cook chicken and shred.", "Sauté carrots and celery until tender.", "Add chicken broth and bring to a boil.", "Add noodles and cook until tender.", "Stir in shredded chicken.", "Serve hot."],
+    "nutrition": {
+        "calories": 250,
+        "protein": 20,
+        "prepTime": 35
+    }
 }
 
   ]
