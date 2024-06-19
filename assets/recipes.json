@@ -385,6 +385,20 @@
         "protein": 4,
         "prepTime": 50
     }
+},
+{
+    "id": "27",
+    "name": "Vegetarian Chili",
+    "category": "Healthy",
+    "description": "A hearty chili made with beans, vegetables, and spices",
+    "imageUrl": "assets/images/vegetarian_chili.png",
+    "ingredients": ["kidney beans", "black beans", "tomatoes", "bell peppers", "onions", "chili powder"],
+    "steps": ["Sauté onions and bell peppers until soft.", "Add beans, tomatoes, and chili powder.", "Simmer for 30 minutes.", "Serve hot with toppings of choice."],
+    "nutrition": {
+        "calories": 300,
+        "protein": 15,
+        "prepTime": 40
+    }
 }
 
   ]
