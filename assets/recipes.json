@@ -1,0 +1,194 @@
+[
+    {
+      "id": "1",
+      "name": "Spaghetti Bolognese",
+      "category": "Popular",
+      "description": "A classic Italian meat sauce served over pasta",
+      "imageUrl": "assets/images/spaghetti.png",
+      "ingredients": ["spaghetti", "ground beef", "onions", "tomato sauce", "red wine"],
+      "steps": ["Cook the spaghetti according to package directions.", "Brown the ground beef and onions.", "Add the tomato sauce and red wine and simmer for 1 hour.", "Toss with cooked spaghetti and serve."],
+      "nutrition": {
+        "calories": 650,
+        "protein": 35, 
+        "prepTime": 60
+      }
+    },
+    {
+      "id": "2",
+      "name": "Chicken Parmesan",
+      "category": "Popular",
+      "description": "Breaded chicken breast topped with tomato sauce and mozzarella",
+      "imageUrl": "assets/images/chicken.png",
+      "ingredients": ["chicken breasts", "breadcrumbs", "parmesan", "tomato sauce", "mozzarella"],
+      "steps": ["Bread chicken breasts with breadcrumbs.", "Pan fry until golden brown.", "Top with tomato sauce and mozzarella.", "Bake until cheese is melted."],
+      "nutrition": {
+        "calories": 550,
+        "protein": 45,
+        "prepTime": 30
+      }
+    },
+    
+    {
+      "id": "3",
+      "name": "Caesar Salad",
+      "category": "Healthy",
+      "description": "Romaine lettuce with creamy Caesar dressing, croutons and parmesan", 
+      "imageUrl": "assets/images/salad.png",
+      "ingredients": ["romaine lettuce", "caesar dressing", "croutons", "parmesan"],
+      "steps": ["Chop romaine lettuce.", "Toss with caesar dressing.", "Top with croutons and parmesan."],
+      "nutrition": {
+        "calories": 250,
+        "protein": 10,
+        "prepTime": 10  
+      }
+    },
+    
+    {
+      "id": "4",
+      "name": "Tacos",
+      "category": "Popular",
+      "description": "Soft tortilla shells filled with seasoned ground beef, lettuce, cheese and salsa",
+      "imageUrl": "assets/images/tacos.png",
+      "ingredients": ["tortillas", "ground beef", "lettuce", "cheese", "salsa"],  
+      "steps": ["Cook ground beef with taco seasoning.", "Warm tortillas.", "Fill with beef, lettuce, cheese and salsa."],
+      "nutrition": {
+        "calories": 500,
+        "protein": 20,
+        "prepTime": 20
+      }
+    },
+    
+    {
+      "id": "5",
+      "name": "Pasta Alfredo",
+      "category": "Popular",
+      "description": "Fettuccine pasta tossed in a rich, creamy parmesan cheese sauce",
+      "imageUrl": "assets/images/alfredo.png",
+      "ingredients": ["fettuccine", "butter", "cream", "parmesan"],
+      "steps": ["Cook pasta according to package directions.", "Melt butter in a pan.", "Add cream and parmesan and cook until thick and creamy.", "Toss pasta with sauce."],
+      "nutrition": {
+        "calories": 800,
+        "protein": 15,
+        "prepTime": 15
+      }
+    },
+  
+    {
+      "id": "6",
+      "name": "Cheese Pizza",
+      "category": "Popular",
+      "description": "Crispy crust with tomato sauce and mozzarella cheese",
+      "imageUrl": "assets/images/pizza.png",
+      "ingredients": ["pizza dough", "tomato sauce", "mozzarella"], 
+      "steps": ["Stretch dough into rounds.", "Top with sauce and cheese.", "Bake until crust is crispy and cheese melted."],
+      "nutrition": {
+        "calories": 700,
+        "protein": 20,
+        "prepTime": 40
+      }
+    },
+    
+    {
+      "id": "7",
+      "name": "Hamburger",
+      "category": "Popular",
+      "description": "Juicy beef patty with lettuce, tomato, onion and cheese on a bun",
+      "imageUrl": "assets/images/burger.png",
+      "ingredients": ["ground beef", "hamburger buns", "lettuce", "tomato", "onion", "cheese"],
+      "steps": ["Form ground beef into patties and grill.", "Toast buns.", "Place patty on bun and top with lettuce, tomato, onion and cheese."],
+      "nutrition": {
+        "calories": 650,
+        "protein": 25,
+        "prepTime": 15
+      }
+    },
+    
+    {  
+      "id": "8",
+      "name": "Chocolate Chip Cookies",
+      "category": "Snacks",
+      "description": "Chewy cookies filled with chocolate chips",
+      "imageUrl": "assets/images/cookies.png",
+      "ingredients": ["flour", "butter", "sugar", "eggs", "chocolate chips"],
+      "steps": ["Cream butter and sugar.", "Beat in eggs.", "Stir in flour and chocolate chips.", "Scoop dough and bake."],
+      "nutrition": {
+        "calories": 200,
+        "protein": 3,
+        "prepTime": 30
+      }
+    },
+    
+    {
+      "id": "9",
+      "name": "Chicken Fried Rice",
+      "category": "Popular",
+      "description": "Rice stir-fried with chicken, vegetables and egg",
+      "imageUrl": "assets/images/rice.png",
+      "ingredients": ["rice", "chicken", "vegetables", "egg", "soy sauce"],
+      "steps": ["Cook rice.", "Stir fry chicken and vegetables.", "Add rice and stir fry.", "Scramble egg and mix in.", "Season with soy sauce."],
+      "nutrition": {
+        "calories": 450,
+        "protein": 25,
+        "prepTime": 30
+      }
+    },
+
+    {
+      "id": "10",
+      "name": "Asian Power Bowl",
+      "category": "Healthy",
+      "description": "Delicious asian power bowl with beef and vegetables",
+      "imageUrl": "assets/images/power_bowl.png",
+      "ingredients": ["rice", "beef", "vegetables", "egg", "soy sauce"],
+      "steps": ["Cook rice.", "Stir fry beef and vegetables.", "Add rice and stir fry.", "Fry Egg", "Season with soy sauce."],
+      "nutrition": {
+        "calories": 650,
+        "protein": 45,
+        "prepTime": 30
+    }
+  },
+
+  {
+    "id": "11",
+    "name": "Homemade Mozzarella",
+    "category": "Popular",
+    "description": "Make your own Mozzarella at Home!",
+    "imageUrl": "assets/images/mozarella.png",
+    "ingredients": ["Milk 5L" , "Yogurt 150ML" , "vegetarian rennet 3ML"],
+    "steps": ["Pour the milk into a large deep pan and set over a low heat until it reaches 38C on a thermometer. Remove from the heat, add the yogurt, mix well, then cover with a lid and leave for 25 mins.",
+      "Add the rennet, stirring very gently, then cover again and leave for another 15-20 mins.",
+      "Add the rennet, stirring very gently, then cover again and leave for another 15-20 mins.",
+      "Heat a larger pan half-full with water over a gentle heat to 40C. Put the pan containing the curds into the larger pan to create a bain-marie and check the water temperature frequently to ensure it stays at around 40C. Top up the water from time to time if needed.", 
+      "After 2 hrs 30 mins, remove the curds from the pan using a slotted spoon and leave to drain in a colander for about 15 mins. Cut the curds into small pieces and put in a large heatproof bowl.", 
+      "Empty the pan of water, then refill and heat to 85C. Pour the hot water over the curds and mix with a wooden spoon for 30-40 seconds. Strain off almost all the water and again, add water at 85C to cover.",
+      "Fold and stretch the curd in the water using the wooden spoon. Keep working until the curds start to become elastic. Now work the curds by folding and stretching by hand (the water will be hot so wear rubber gloves) until they become smooth and elastic.",
+      "Take smaller pieces of the curd and shape into balls. Immediately put in a tub of cold water and chill in the fridge. Can be kept in water, covered, and chilled for up to a week."],
+    "nutrition": {
+      "calories": 423,
+      "protein": 31,
+      "prepTime": 210
+  }
+},
+
+{
+  "id": "12",
+  "name": "Tomato Sauce",
+  "category": "Soup",
+  "description": "Delicious Homemade Tomato Sauce",
+  "imageUrl": "assets/images/tomatosouce.png",
+  "ingredients": ["Tomatos", "Olive Oil", "Butter", "Onion", "Bell pepper" , "Carrot" , "Celery"],
+  "steps": ["Boil the tomatoes until the skin starts to peel, then transfer them to an ice bath.",
+    "Slip off the skins and squeeze out the seeds.",
+    "Chop eight tomatoes, then puree them in a blender. Chop the remaining tomatoes and set aside.",
+    "FSauté the veggies and garlic until very tender. Add the pureed and chopped tomatoes.",
+    "Stir in the wine, basil, and seasoning. Add the celery stalks and bay leaf.",
+    "Simmer for two hours, stir in the tomato paste, then continue simmering for two more hours.",
+    "Remove the bay leaf and celery before serving."],
+  "nutrition": {
+    "calories": 90,
+    "protein": 3,
+    "prepTime": 60
+}
+}
+
+  ]
