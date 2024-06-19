@@ -441,6 +441,20 @@
         "protein": 20,
         "prepTime": 35
     }
+},
+{
+    "id": "31",
+    "name": "Blueberry Muffins",
+    "category": "Breakfast",
+    "description": "Moist and fluffy muffins filled with fresh blueberries",
+    "imageUrl": "assets/images/blueberry_muffins.png",
+    "ingredients": ["flour", "sugar", "butter", "eggs", "milk", "blueberries"],
+    "steps": ["Preheat oven to 375°F.", "Mix flour, sugar, and baking powder.", "Whisk in eggs, milk, and melted butter.", "Fold in blueberries.", "Pour batter into muffin tins.", "Bake for 20 minutes.", "Cool before serving."],
+    "nutrition": {
+        "calories": 150,
+        "protein": 3,
+        "prepTime": 30
+    }
 }
 
   ]
