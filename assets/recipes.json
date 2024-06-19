@@ -469,6 +469,20 @@
             "protein": 25,
             "prepTime": 20
         }
+    },
+    {
+        "id": "33",
+        "name": "Garlic Shrimp",
+        "category": "Popular",
+        "description": "Succulent shrimp cooked with garlic and butter",
+        "imageUrl": "assets/images/garlic_shrimp.png",
+        "ingredients": ["shrimp", "garlic", "butter", "lemon", "parsley"],
+        "steps": ["Sauté garlic in butter until fragrant.", "Add shrimp and cook until pink.", "Squeeze lemon juice over shrimp.", "Garnish with chopped parsley.", "Serve hot."],
+        "nutrition": {
+            "calories": 300,
+            "protein": 25,
+            "prepTime": 15
+        }
     }
 
   ]
