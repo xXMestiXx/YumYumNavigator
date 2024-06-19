@@ -343,6 +343,20 @@
         "protein": 20,
         "prepTime": 45
     }
+},
+{
+    "id": "24",
+    "name": "Chicken Fajitas",
+    "category": "Popular",
+    "description": "Sizzling chicken strips with peppers and onions, served with tortillas",
+    "imageUrl": "assets/images/chicken_fajitas.png",
+    "ingredients": ["chicken breasts", "bell peppers", "onions", "fajita seasoning", "tortillas"],
+    "steps": ["Slice chicken, peppers, and onions.", "Sauté chicken with fajita seasoning.", "Add peppers and onions, cook until tender.", "Serve with warm tortillas."],
+    "nutrition": {
+        "calories": 400,
+        "protein": 30,
+        "prepTime": 25
+    }
 }
 
   ]
