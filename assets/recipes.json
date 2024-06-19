@@ -287,6 +287,34 @@
         "protein": 30,
         "prepTime": 15
     }
+},
+{
+    "id": "20",
+    "name": "Stuffed Bell Peppers",
+    "category": "Healthy",
+    "description": "Bell peppers stuffed with a mixture of rice, ground beef, and vegetables",
+    "imageUrl": "assets/images/stuffed_bell_peppers.png",
+    "ingredients": ["bell peppers", "ground beef", "rice", "tomato sauce", "onion", "garlic"],
+    "steps": ["Preheat oven to 375°F.", "Cook rice according to package directions.", "Brown ground beef with onion and garlic.", "Mix cooked rice, beef, and tomato sauce.", "Stuff bell peppers with mixture and bake for 30 minutes."],
+    "nutrition": {
+        "calories": 400,
+        "protein": 25,
+        "prepTime": 40
+    }
+},
+{
+    "id": "21",
+    "name": "French Onion Soup",
+    "category": "Soup",
+    "description": "A rich and savory soup topped with melted cheese and croutons",
+    "imageUrl": "assets/images/french_onion_soup.png",
+    "ingredients": ["onions", "beef broth", "butter", "thyme", "baguette", "gruyere cheese"],
+    "steps": ["Sauté onions in butter until caramelized.", "Add beef broth and thyme, simmer for 20 minutes.", "Ladle soup into bowls and top with baguette slices and cheese.", "Broil until cheese is melted and bubbly.", "Serve hot."],
+    "nutrition": {
+        "calories": 350,
+        "protein": 10,
+        "prepTime": 50
+    }
 }
 
   ]
