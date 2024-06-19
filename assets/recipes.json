@@ -245,6 +245,20 @@
         "protein": 30,
         "prepTime": 25
     }
+},
+{
+    "id": "17",
+    "name": "Beef Tacos",
+    "category": "Popular",
+    "description": "Seasoned ground beef in soft taco shells with lettuce, cheese, and salsa",
+    "imageUrl": "assets/images/beef_tacos.png",
+    "ingredients": ["ground beef", "taco seasoning", "taco shells", "lettuce", "cheese", "salsa"],
+    "steps": ["Cook ground beef with taco seasoning.", "Warm taco shells.", "Fill shells with beef, lettuce, cheese, and salsa.", "Serve immediately."],
+    "nutrition": {
+        "calories": 450,
+        "protein": 20,
+        "prepTime": 20
+    }
 }
 
   ]
