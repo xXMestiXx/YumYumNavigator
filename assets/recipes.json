@@ -357,6 +357,20 @@
         "protein": 30,
         "prepTime": 25
     }
+},
+{
+    "id": "25",
+    "name": "Garlic Mashed Potatoes",
+    "category": "Side Dish",
+    "description": "Creamy mashed potatoes with roasted garlic",
+    "imageUrl": "assets/images/garlic_mashed_potatoes.png",
+    "ingredients": ["potatoes", "garlic", "butter", "milk", "cream"],
+    "steps": ["Peel and boil potatoes until tender.", "Roast garlic until soft and fragrant.", "Mash potatoes with butter, milk, and roasted garlic.", "Season with salt and pepper.", "Serve warm."],
+    "nutrition": {
+        "calories": 250,
+        "protein": 5,
+        "prepTime": 30
+    }
 }
 
   ]
