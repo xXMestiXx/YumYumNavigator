@@ -273,6 +273,20 @@
         "protein": 12,
         "prepTime": 20
     }
+},
+{
+    "id": "19",
+    "name": "Chicken Caesar Wrap",
+    "category": "Healthy",
+    "description": "Grilled chicken, romaine lettuce, and Caesar dressing wrapped in a tortilla",
+    "imageUrl": "assets/images/chicken_caesar_wrap.png",
+    "ingredients": ["chicken breasts", "romaine lettuce", "caesar dressing", "tortillas", "parmesan cheese"],
+    "steps": ["Grill chicken breasts and slice thinly.", "Chop romaine lettuce.", "Toss chicken and lettuce with Caesar dressing.", "Wrap mixture in tortillas.", "Sprinkle with parmesan cheese before serving."],
+    "nutrition": {
+        "calories": 450,
+        "protein": 30,
+        "prepTime": 15
+    }
 }
 
   ]
