@@ -315,6 +315,20 @@
         "protein": 10,
         "prepTime": 50
     }
+},
+{
+    "id": "22",
+    "name": "Mango Smoothie",
+    "category": "Healthy",
+    "description": "A creamy and refreshing smoothie made with mango and yogurt",
+    "imageUrl": "assets/images/mango_smoothie.png",
+    "ingredients": ["mango", "yogurt", "honey", "milk"],
+    "steps": ["Peel and chop mango.", "Blend mango, yogurt, honey, and milk until smooth.", "Serve chilled."],
+    "nutrition": {
+        "calories": 200,
+        "protein": 8,
+        "prepTime": 5
+    }
 }
 
   ]
