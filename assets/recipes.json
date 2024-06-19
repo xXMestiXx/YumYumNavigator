@@ -217,6 +217,34 @@
         "protein": 30,
         "prepTime": 40
     }
+},
+{
+    "id": "15",
+    "name": "Vegetable Stir-Fry",
+    "category": "Healthy",
+    "description": "A mix of colorful vegetables stir-fried with a savory sauce",
+    "imageUrl": "assets/images/vegetable_stirfry.png",
+    "ingredients": ["broccoli", "carrots", "bell peppers", "snap peas", "soy sauce", "ginger"],
+    "steps": ["Heat oil in a wok over high heat.", "Add ginger and sauté for 1 minute.", "Add all vegetables and stir-fry until tender-crisp.", "Pour in soy sauce and stir until vegetables are coated.", "Serve hot over rice or noodles."],
+    "nutrition": {
+        "calories": 200,
+        "protein": 5,
+        "prepTime": 15
+    }
+},
+{
+    "id": "16",
+    "name": "Shrimp Scampi",
+    "category": "Popular",
+    "description": "Succulent shrimp cooked in a garlic butter sauce, served over pasta",
+    "imageUrl": "assets/images/shrimp_scampi.png",
+    "ingredients": ["shrimp", "garlic", "butter", "white wine", "lemon", "spaghetti"],
+    "steps": ["Cook spaghetti according to package directions.", "Sauté garlic in butter until fragrant.", "Add shrimp and cook until pink.", "Pour in white wine and lemon juice, simmer for 5 minutes.", "Toss with cooked spaghetti and serve."],
+    "nutrition": {
+        "calories": 500,
+        "protein": 30,
+        "prepTime": 25
+    }
 }
 
   ]
