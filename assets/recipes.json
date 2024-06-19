@@ -399,6 +399,20 @@
         "protein": 15,
         "prepTime": 40
     }
+},
+{
+    "id": "28",
+    "name": "Pancakes",
+    "category": "Breakfast",
+    "description": "Fluffy pancakes served with syrup and butter",
+    "imageUrl": "assets/images/pancakes.png",
+    "ingredients": ["flour", "milk", "eggs", "baking powder", "butter", "syrup"],
+    "steps": ["Mix flour, baking powder, and sugar.", "Whisk in milk and eggs.", "Heat butter in a pan over medium heat.", "Pour batter into pan and cook until bubbles form.", "Flip and cook until golden brown.", "Serve with syrup and butter."],
+    "nutrition": {
+        "calories": 350,
+        "protein": 8,
+        "prepTime": 20
+    }
 }
 
   ]
