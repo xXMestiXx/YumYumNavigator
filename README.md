@@ -23,7 +23,16 @@ YumYumNavigator präsentiert eine Vielzahl von Rezepten, die nach Kategorien wie
 Lass dich von YumYumNavigator inspirieren und entdecke neue Geschmackswelten – jetzt kannst du mit einem Fingertipp dein nächstes kulinarisches Meisterwerk erschaffen! Guten Appetit!
 
 
+Screenshots Desktop-Version:
 
+ Startbildschirm:
+![Startbildschirm](assets/images/Startbildschirm.png)
+
+ Rezeptübersicht
+![Rezeptübersicht](assets/images/Rezeptübersicht.png)
+
+ Rezeptdetailansicht
+![Rezeptdetailansicht](assets/images/Rezeptdetailansicht.png)
 
 
 
