@@ -1,11 +1,4 @@
-# flutterdemo
-
-CPD SS24
-
-## Getting Started
-
-
-# CPD
+# CPD - Cross-Plattform-Development with Flutter 
 
 CPD :
 -Dart 
